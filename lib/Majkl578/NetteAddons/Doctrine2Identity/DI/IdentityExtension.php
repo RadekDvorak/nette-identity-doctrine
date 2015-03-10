@@ -34,8 +34,7 @@ class IdentityExtension extends CompilerExtension
 			$builder->getDefinition('security.userStorage')
 				->setFactory('Majkl578\NetteAddons\Doctrine2Identity\Http\UserStorage');
 		}
-		else
-		{
+		else {
 			$builder->getDefinition('nette.userStorage')
 				->setClass('Majkl578\NetteAddons\Doctrine2Identity\Http\UserStorage');
 		}
